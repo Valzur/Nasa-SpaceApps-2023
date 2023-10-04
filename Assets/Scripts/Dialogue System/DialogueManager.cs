@@ -17,7 +17,11 @@ namespace DialogueSystem
 		int currentPartIndex = 0;
 		Dialogue currentDialogue = null;
 
-		void Awake() => instance = this;
+		void Awake()
+		{
+			instance = this;
+			instance.gfxParent.SetActive(false);
+		}
 
 		public static void View(DialogueReference dialogueReference)
 		{
