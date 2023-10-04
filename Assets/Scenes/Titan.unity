@@ -343,10 +343,10 @@ MonoBehaviour:
   gfxParent: {fileID: 1018992168}
   skipButton: {fileID: 1221327335}
   doneButton: {fileID: 1005473306}
-  imageComponent: {fileID: 0}
-  speakerImageComponent: {fileID: 0}
-  speakerNameTextComponent: {fileID: 0}
-  speakerMessageTextComponent: {fileID: 0}
+  imageComponent: {fileID: 1649760456}
+  speakerImageComponent: {fileID: 336518436}
+  speakerNameTextComponent: {fileID: 1770978974}
+  speakerMessageTextComponent: {fileID: 17256199}
 --- !u!1 &319680529
 GameObject:
   m_ObjectHideFlags: 0
