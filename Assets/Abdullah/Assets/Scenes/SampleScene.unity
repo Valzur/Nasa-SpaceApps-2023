@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 464742986}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1774,3 +1774,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipText: {fileID: 1671162627}
+  ObjectToPlace: {fileID: 3890312703424372065, guid: 95d59927703f919418b441fb8849c4cf, type: 3}
