@@ -19,9 +19,15 @@ public class Actor : MonoBehaviour
 			OnHealthChanged?.Invoke(value);
 		}
 	}
+
+	[SerializeField] float oxygenRateOfConsumption;
+	[SerializeField] float baseOxygenCapacity;
+	[SerializeField] float baseRadiationResistance;
+#region Events
 	public event Action<float> OnDamageTaken;
 	public event Action<float> OnHealthChanged;
 	public event Action OnDeath;
+#endregion
 
 	protected virtual void Awake()
 	{
@@ -36,5 +42,10 @@ public class Actor : MonoBehaviour
 		{
 			OnDeath?.Invoke();
 		}
+	}
+
+	public void Radiate()
+	{
+		
 	}
 }
