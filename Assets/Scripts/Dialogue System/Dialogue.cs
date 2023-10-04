@@ -18,6 +18,7 @@ namespace DialogueSystem
 
 	public struct DialogueReference
 	{
+		public static readonly DialogueReference None;
 		[Dropdown("GetDialogueIDList")] public string DialogueID;
 
 #if UNITY_EDITOR
