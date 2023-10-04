@@ -1,10 +1,34 @@
+using System;
 using UnityEngine;
 
 namespace InventorySystem
 {
-	public class Item : ScriptableObject
+	[Serializable]
+	public struct Item
 	{
-		[SerializeField] Sprite icon;
-		[SerializeField] string name;
+		public readonly static Item Empty;
+		public ItemData data;
+		public int Count;
+
+		static Item()
+		{
+			Empty = new()
+			{
+				data = ScriptableObject.CreateInstance<ItemData>(),
+				Count = 0,
+			};
+		}
+
+		public Item(ItemData itemData)
+		{
+			data = itemData;
+			Count = 1;
+		}
+
+		public void Interact() => data.Interact();
+
+		public static bool operator ==(Item a, Item b) => a.data == b.data;
+		public static bool operator !=(Item a, Item b) => a.data != b.data;
 	}
+
 }

@@ -4,12 +4,12 @@ using UnityEngine;
 public class PlayerActor : Actor
 {
 	public static PlayerActor Instance;
-	[field:SerializeField] Inventory playerInventory;
+	[field:SerializeField] public Inventory PlayerInventory { get; private set; }
 
 	protected override void Awake()
 	{
 		base.Awake();
-		playerInventory = new(40);
+		PlayerInventory = new(40);
 		Instance = this;
 	}
 }
