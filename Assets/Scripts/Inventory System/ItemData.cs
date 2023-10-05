@@ -8,8 +8,8 @@ namespace InventorySystem
 	{
 		public Sprite icon;
 		public string name;
-		public Action Consume;
 
 		public virtual void Interact(){}
-	}
+        protected void Consume() => PlayerActor.Instance.PlayerInventory.RemoveItem(new Item(this));
+    }
 }

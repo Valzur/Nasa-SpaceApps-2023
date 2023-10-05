@@ -61,9 +61,15 @@ namespace InventorySystem
 				}
 			}
 		}
+
 		public void RemoveItem(int index)
 		{
-			Items[index] = Item.Empty;
+			Items[index].Count--;
+			if(Items[index].Count <= 0)
+			{
+				Items[index] = Item.Empty;
+			}
+
 			OnItemsChanged?.Invoke();
 		}
 

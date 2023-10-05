@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public abstract class Interactable : MonoBehaviour
 {
@@ -15,4 +11,7 @@ public abstract class Interactable : MonoBehaviour
         //Do Somathing
     }
 
+    void OnMouseDown() => OnInteract();
+
+    protected virtual void OnInteract(){}
 }
