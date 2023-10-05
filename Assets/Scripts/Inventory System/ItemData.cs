@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace InventorySystem
@@ -10,6 +9,6 @@ namespace InventorySystem
 		public string name;
 
 		public virtual void Interact(){}
-        protected void Consume() => PlayerActor.Instance.PlayerInventory.RemoveItem(new Item(this));
-    }
+		protected void Consume() => PlayerActor.Instance.PlayerInventory.RemoveItem(new Item(this));
+	}
 }

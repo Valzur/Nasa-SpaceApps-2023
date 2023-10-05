@@ -51,7 +51,7 @@ namespace DialogueSystem
 			imageComponent.sprite = currentDialogue.DialogueParts[currentPartIndex].Image;
 			imageComponent.gameObject.SetActive(currentDialogue.DialogueParts[currentPartIndex].Image);
 			speakerImageComponent.sprite = currentDialogue.DialogueParts[currentPartIndex].Image;
-			speakerNameTextComponent.text = currentDialogue.DialogueParts[currentPartIndex].DialogueSpeaker.Name;
+			speakerNameTextComponent.text = ((DialogueSpeaker)currentDialogue.DialogueParts[currentPartIndex].DialogueSpeaker).Name;
 			speakerMessageTextComponent.text = currentDialogue.DialogueParts[currentPartIndex].Message;
 		}
 	}

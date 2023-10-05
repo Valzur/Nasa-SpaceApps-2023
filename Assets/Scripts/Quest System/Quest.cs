@@ -32,7 +32,7 @@ namespace QuestSystem
 		public static implicit operator Quest(QuestReference questReference) => All.First((quest) => quest.Name == questReference.QuestName);
 
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-		static void Init()
+		public static void Init()
 		{
 			All = typeof(Quest).Assembly.GetTypes()
 				.Where((type) => !type.IsAbstract && type.IsSubclassOf(typeof(Quest)))
@@ -49,6 +49,11 @@ namespace QuestSystem
 #if UNITY_EDITOR
 		public System.Collections.Generic.List<string> GetQuestList()
 		{
+			if(Quest.All == null)
+			{
+				Quest.Init();
+			}
+
 			System.Collections.Generic.List<string> list = new();
 
 			list = Quest.All.Select((quest) => quest.Name).ToList();
