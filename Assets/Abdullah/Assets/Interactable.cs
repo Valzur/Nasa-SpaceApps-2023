@@ -2,16 +2,7 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    public enum interactable { Box, Sphere,CraftingScreen };
-    public interactable CurrentI;
-    public abstract void DoSomething();
-    private void OnMouseDown()
-    {
-        DoSomething();
-        //Do Somathing
-    }
+	void OnMouseDown() => OnInteract();
 
-    void OnMouseDown() => OnInteract();
-
-    protected virtual void OnInteract(){}
+	protected virtual void OnInteract(){}
 }
