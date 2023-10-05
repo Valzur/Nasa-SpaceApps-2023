@@ -4,13 +4,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    public enum interactable { Box, Sphere };
+    public enum interactable { Box, Sphere,CraftingScreen };
     public interactable CurrentI;
-
+    public abstract void DoSomething();
     private void OnMouseDown()
     {
+        DoSomething();
         //Do Somathing
     }
 

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 759783570302248245}
   - component: {fileID: 2823881296660528288}
   - component: {fileID: 5729415253826634598}
+  - component: {fileID: 8422972151671730720}
   m_Layer: 0
   m_Name: Place
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8422972151671730720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961626833336678187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f6dec3aacf95445880f95d0870a644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Placed Object
