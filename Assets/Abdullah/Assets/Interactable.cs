@@ -8,4 +8,10 @@ public class Interactable : MonoBehaviour
 {
     public enum interactable { Box, Sphere };
     public interactable CurrentI;
+
+    private void OnMouseDown()
+    {
+        //Do Somathing
+    }
+
 }
