@@ -137,7 +137,6 @@ Material:
     - _EmissionColor: {r: 0.11796324, g: 0.1969833, b: 0.263, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
-<<<<<<< HEAD
 --- !u!114 &1206352854153513846
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -151,5 +150,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 7
-=======
->>>>>>> e2b48a1f84d6b8c3f4dd71d7f3ae8adc72c43707

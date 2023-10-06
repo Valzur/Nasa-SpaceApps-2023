@@ -25,7 +25,6 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-<<<<<<< HEAD
   - _ALPHATEST_ON
   - _EMISSION
   - _METALLICSPECGLOSSMAP
@@ -37,19 +36,6 @@ Material:
   m_CustomRenderQueue: 2450
   stringTagMap:
     RenderType: TransparentCutout
-=======
-  - _EMISSION
-  - _METALLICSPECGLOSSMAP
-  - _NORMALMAP
-  m_InvalidKeywords:
-  - _METALLICGLOSSMAP
-  m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
->>>>>>> e2b48a1f84d6b8c3f4dd71d7f3ae8adc72c43707
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -117,7 +103,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-<<<<<<< HEAD
     - _AlphaClip: 1
     - _AlphaToMask: 1
     - _Blend: 0
@@ -125,13 +110,6 @@ Material:
     - _BlendOp: 0
     - _BumpScale: -0.1
     - _ClearCoat: 0
-=======
-    - _AlphaClip: 0
-    - _AlphaToMask: 0
-    - _Blend: 0
-    - _BlendModePreserveSpecular: 1
-    - _BumpScale: -0.1
->>>>>>> e2b48a1f84d6b8c3f4dd71d7f3ae8adc72c43707
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -143,10 +121,7 @@ Material:
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 1
-<<<<<<< HEAD
     - _GlossinessSource: 0
-=======
->>>>>>> e2b48a1f84d6b8c3f4dd71d7f3ae8adc72c43707
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -154,17 +129,12 @@ Material:
     - _Parallax: 0.08
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-<<<<<<< HEAD
     - _SampleGI: 0
     - _Shininess: 0
     - _Smoothness: 1
     - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
     - _SpecSource: 0
-=======
-    - _Smoothness: 1
-    - _SmoothnessTextureChannel: 0
->>>>>>> e2b48a1f84d6b8c3f4dd71d7f3ae8adc72c43707
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
@@ -178,7 +148,6 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
-<<<<<<< HEAD
 --- !u!114 &7291967787466510404
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -192,5 +161,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 7
-=======
->>>>>>> e2b48a1f84d6b8c3f4dd71d7f3ae8adc72c43707
