@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -14,6 +13,8 @@ public class PlayerMover : MonoBehaviour
 
 	void Awake()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody>();
 	}
