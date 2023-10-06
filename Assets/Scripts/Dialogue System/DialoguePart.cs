@@ -6,7 +6,7 @@ namespace DialogueSystem
 	[Serializable]
 	public struct DialoguePart
 	{
-		public DialogueSpeaker DialogueSpeaker;
+		public DialogueSpeakerReference DialogueSpeaker;
 		public string Message;
 		public Sprite Image;
 	}
