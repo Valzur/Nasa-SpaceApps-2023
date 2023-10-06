@@ -1,4 +1,5 @@
 using DialogueSystem;
+using NaughtyAttributes;
 using UnityEngine;
 
 public class QuestMonitor : Interactable
@@ -15,4 +16,8 @@ public class QuestMonitor : Interactable
 		DialogueManager.View(availableDialogue);
 	}
 
+#if UNITY_EDITOR
+	[Button]
+	void Refresh() => Dialogue.Init();
+#endif
 }

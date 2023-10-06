@@ -30,6 +30,9 @@ namespace DialogueSystem
 				return;
 			}
 
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+
 			instance.gfxParent.SetActive(true);
 			instance.currentDialogue = dialogueReference;
 			instance.currentPartIndex = 0;
@@ -42,12 +45,17 @@ namespace DialogueSystem
 			instance.SetupCurrentPart();
 		}
 
-		public void Finish() => gfxParent.SetActive(false);
+		public void Finish()
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+			gfxParent.SetActive(false);
+		}
 
 		void SetupCurrentPart()
 		{
-			skipButton.gameObject.SetActive(currentPartIndex != currentDialogue.DialogueID.Length);
-			doneButton.gameObject.SetActive(currentPartIndex == currentDialogue.DialogueID.Length);
+			skipButton.gameObject.SetActive(currentPartIndex != currentDialogue.DialogueParts.Length - 1);
+			doneButton.gameObject.SetActive(currentPartIndex == currentDialogue.DialogueParts.Length - 1);
 			imageComponent.sprite = currentDialogue.DialogueParts[currentPartIndex].Image;
 			imageComponent.gameObject.SetActive(currentDialogue.DialogueParts[currentPartIndex].Image);
 			speakerImageComponent.sprite = currentDialogue.DialogueParts[currentPartIndex].Image;

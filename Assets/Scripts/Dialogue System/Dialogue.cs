@@ -19,7 +19,7 @@ namespace DialogueSystem
 	}
 
 	[Serializable]
-	public struct DialogueReference
+	public class DialogueReference
 	{
 		public static readonly DialogueReference None;
 		[Dropdown("GetDialogueIDList")] public string DialogueID;

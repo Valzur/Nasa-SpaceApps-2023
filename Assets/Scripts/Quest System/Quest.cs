@@ -42,7 +42,7 @@ namespace QuestSystem
 	}
 
 	[Serializable]
-	public struct QuestReference
+	public class QuestReference
 	{
 		[Dropdown("GetQuestList")] public string QuestName;
 
