@@ -7,7 +7,7 @@ using UnityEngine;
 public class Recipe : ScriptableObject
 {
 	public static Recipe[] All => UnityEngine.Resources.LoadAll<Recipe>("Recipes");
-	public ItemData Output;
+	public PlaceableItem Output;
 	public Requirement[] requirements;
 }
 

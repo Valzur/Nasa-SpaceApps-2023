@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089f3b7c6415f0b428e922c06b19a56e, type: 3}
   m_Name: Habitat
   m_EditorClassIdentifier: 
-  Output: {fileID: 0}
-  requirements:
-  - Resource: 0
-    Count: 12
+  Output: {fileID: 11400000, guid: 22f0e8dc52e82c548a4e2edb24679d9d, type: 2}
+  requirements: []

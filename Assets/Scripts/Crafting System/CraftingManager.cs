@@ -20,7 +20,7 @@ public static class CraftingManager
 	{
 		foreach (Requirement requirement in recipe.requirements)
 		{
-			if(Resources.CountOf(requirement.Resource) < requirement.Count)
+			if(Resources.CountOf(requirement.Resource) <= requirement.Count)
 			{
 				return false;
 			}
@@ -29,7 +29,7 @@ public static class CraftingManager
 		return true;
 	}
 
-	static void PayRecipeCost(Recipe recipe)
+	public static void PayRecipeCost(Recipe recipe)
 	{
 		foreach (Requirement requirement in recipe.requirements)
 		{

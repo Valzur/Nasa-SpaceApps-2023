@@ -11,7 +11,4 @@ public abstract class Interactable : MonoBehaviour
         //Do Somathing
     }
 
-    void OnMouseDown() => OnInteract();
-
-    protected virtual void OnInteract(){}
 }

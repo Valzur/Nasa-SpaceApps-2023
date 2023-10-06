@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede632a62cc930b488f15bae836eff82, type: 3}
   m_Name: Habitat
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  name: 
-  prefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 603eabcd71ec55e41be090a50f8b646e, type: 3}
+  name: Habitat
+  prefab: {fileID: 2961626833336678187, guid: 95d59927703f919418b441fb8849c4cf, type: 3}

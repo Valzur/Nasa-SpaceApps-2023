@@ -7,6 +7,7 @@ public class Tooltip : MonoBehaviour
     public Text tooltipText;
     public static Interactable Current;
     public GameObject ObjectToPlace;
+    public static bool IsAbleToPlace = false;
     void Start()
     {
         HideTooltip();
@@ -25,7 +26,7 @@ public class Tooltip : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider.gameObject.tag == "Ground" && Input.GetKeyDown(KeyCode.Mouse0))
+            if (hit.collider.gameObject.tag == "Ground" && Input.GetKeyDown(KeyCode.Mouse0) && IsAbleToPlace)
             {
                 Vector3 Pos = hit.point + new Vector3(0f,2.5f,0f);
                 Vector3 yAxis = hit.normal;
@@ -33,6 +34,7 @@ public class Tooltip : MonoBehaviour
                 Vector3 zAxis = Vector3.Cross(xAxis, yAxis);
                 quaternion Rot = Quaternion.LookRotation(zAxis, yAxis);
                 GameObject SpawnedObject = Instantiate(ObjectToPlace,Pos,Rot);
+                IsAbleToPlace = false;
             }
             
 
@@ -75,9 +77,5 @@ public class Tooltip : MonoBehaviour
     void HideTooltip()
     {
         tooltipText.GetComponent<Text>().enabled = false;
-    }
-    public void PlaceObject()
-    {
-
     }
 }
