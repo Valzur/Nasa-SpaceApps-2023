@@ -46,17 +46,6 @@ public class PlayerMover : MonoBehaviour
 			return;
 		}
 
-		List<ContactPoint> contactPoints = new();
-		collision.GetContacts(contactPoints);
-
-		foreach (var contactPoint in contactPoints)
-		{
-			if(contactPoint.point.y > transform.position.y)
-			{
-				return;
-			}
-		}
-
 		animator.SetBool("isJumping", false);
 		isJumping = false;
 	}
